@@ -6,11 +6,11 @@ Nombre: Donovan Jhosue Salazar Lopez
 
 ## OBJETIVO GENERAL
 
-• Conocer sobre los circuitos en serie-paralelo y los teoremas de circuitos y conversiones mediante la utilización del libro de Floyd "Principios de Circuitos Eléctricos"
+• Reconocer los circuitos en serie-paralelo y conversiones mediante la utilización del libro de Floyd "Principios de Circuitos Eléctricos"
 
 ## OBJETIVOS ESPECIFICOS
 
-• Resumir los capítulos siete y ocho del libro de Floyd "Principios de Circuitos Eléctricos", para que de esta forma se pueda comprender de una mejor manera los temas descritos.
+• Reconocer un sistema en serie y uno en paralelo para poder utilizar las ecuciones de cada una de ellas para poder resolverlo
 
 • Aplicar los conocimientos adquiridos de los temas de circuitos en serie y circuitos en paralelo para la resolución de los ejercicios propuestos por el libro de Floyd.
 
@@ -331,5 +331,264 @@ Con el método de superposición, encuentre la corriente a través de R5 en la f
 
 ![image](https://user-images.githubusercontent.com/116816731/208304739-a80675df-c392-4134-b1e2-627f536e2fff.png)
 
-Con el teorema de superposición, determine la corriente a través de R3 en la figura 8-70.
+9.  el teorema de superposición, determine la corriente a través de R3 en la figura 8-70.
+
+![image](https://user-images.githubusercontent.com/116816731/208304803-ed7a1a3e-3772-49a0-ad57-3a2c88386e18.png)
+
+Reemplazando la fuente de corriente de 100 mA tenemos un nuevo circuito:
+
+![image](https://user-images.githubusercontent.com/116816731/208304829-853f5041-a602-44c9-87c9-e9527d1a651e.png)
+
+Utilizando método de las mallas tenemos las siguientes ecuaciones:
+
+680I1+220(I1-I2 )+20=0
+
+220(I2-I1 )+300I2+470I2+20=0
+
+La solución al sistema de ecuación es:
+
+I1=- 0.0184 A
+
+I2=0.01563
+
+A=15.6 mA
+
+Ahora haremos un segundo análisis reemplazando la fuente de voltaje de 20V, y tenemos:
+
+![image](https://user-images.githubusercontent.com/116816731/208304844-d35e730e-3ace-44d3-a955-d456692887aa.png)
+
+I1=0.1 A
+
+680(I2-0.1)+220(I2-I3 )=0
+
+220(I3-I2 )+330I3+470I3=0
+
+La solución al sistema de ecuaciones es:
+
+I2=0.0798 A
+
+I3=0.172 A=17.2 mA
+
+Finalmente restamos las corrientes obtenidas que pasan por R3:
+
+IR3=17.2 mA-15.6 mA
+
+IR3=1.6 mA
+
+11.En la figura 8-72 se muestra un circuito comparador. El voltaje de entrada, VENTRADA, se compara con el voltaje de referencia, VREFERENCIA, y se genera una salida negativa si VREFERENCIA > VENTRADA; de lo contrario es positiva. El comparador no carga a una u otra entrada. Si R2 es de 1.0 kΩ, ¿cuál es el intervalo del voltaje de referencia?
+
+![image](https://user-images.githubusercontent.com/116816731/208304884-741e597f-461e-4bcd-816f-8e7195f73d99.png)
+
+VR (max) = (R2+R3/R1+R2+R3)30V – 15V = (7.8 KΩ/12.5 KΩ)30V- 15V= 3.72V
+
+VR (min) = (R3/R1+R2+R3)30V – 15V = (6.8 KΩ/12.5 KΩ)30V- 15V= 1.32V
+
+13.Determine el voltaje del punto A al punto B en la figura 8-73.
+
+![image](https://user-images.githubusercontent.com/116816731/208304900-8098d67b-7876-4b60-95f6-d6fdfa84e6a5.png)
+
+R3 y R2 están en paralelo:
+
+Req1 = (33 kΩ * 56 kΩ) / (33 kΩ + 56 kΩ) = 20.76 kΩ
+
+Hallando VTH:
+
+VTH= (20.76 kΩ / (82 kΩ + 20.76 kΩ + 91 kΩ)) * (75V – 50V) = 9.28 V
+
+Por lo que tenemos:
+
+V=100V – 9.28V = 90.72V
+
+15.La figura 8-75 muestra dos redes en escalera. Determine la corriente producida por cada una de las baterías cuando se conectan las terminales A (A a A) y las terminales B (B a B).
+
+![image](https://user-images.githubusercontent.com/116816731/208304961-389776f1-b0f8-4eae-b03c-8f1a9141744b.png)
+
+SECCIÓN 8–5 Teorema de Thevenin
+
+17.Con el teorema de Thevenin, determine la corriente a través de la carga RL en la figura 8-7.
+
+![image](https://user-images.githubusercontent.com/116816731/208304982-a2eeeee7-c21a-42bf-914a-ad0d94bd94c2.png)
+
+Apartando RL
+
+VTh = (5.6 kΩ / (10 kΩ + 5.6 kΩ) ) *32V = 11.49V
+
+IRL = VTh / RL = 11.49V / 15 kΩ = 0.116 mA = 116 µA
+
+Determine el equivalente de Thevenin para el circuito externo al amplificador de la figura 8-79.
+
+![image](https://user-images.githubusercontent.com/116816731/208305005-57dd71ab-6efd-4a68-ad30-bb3d7c89b058.png)
+
+Utilizando análisis de nodos
+
+(V1-1/100 Ω) + (V1/1200 Ω) + (V1-5/2200 Ω) = 0
+
+V1-1 + 100/1200 V1 + 100/2200(V1-5) = 0
+
+12V1 – 12 + V1 + 12/22 (V1-5) = 0
+
+264V1 – 264 + 22 V1 +12V1 -60= 0
+
+298V1=324
+
+VS=1.08 V
+
+VTh = (1.08 V)
+
+Resistencia Equivalente
+
+RTh = 100 Ω (1200) (2200) / 1200+2200 = 876.47 Ω
+
+21.Determine la corriente a través del resistor de carga en el circuito puente de la figura 8-81.
+
+![image](https://user-images.githubusercontent.com/116816731/208305036-9ba836e5-5edc-45a0-9636-2676d5c186db.png)
+
+Voltaje Thevenin
+
+VTh= VA – VB = (2.2 KΩ / 3.2 KΩ) 12V – (1.2 KΩ / 2.02 KΩ) 12V= 1.12V
+
+Resistencia Thevenin
+
+RTh= (1/1/1 + 1/1/2.2) + (1/1/0.82) + (1/1/1.2) = 1.175 KΩ
+
+I1 = VTh / RTh + R1 = (1.12/1.175 + 10) = 100 µA
+
+SECCIÓN 8–6 Teorema de Norton
+
+23.Para cada uno de los circuitos mostrados en la figura 8-76, determine el equivalente Norton visto por RL.
+
+![image](https://user-images.githubusercontent.com/116816731/208305081-82f52cc0-253f-4139-991c-4c2d74b2a1a9.png)
+
+a) IN = 100 mA
+
+RN = 76.7 Ω
+
+b) IN = 11.1 mA
+
+RN = 73 Ω
+
+c) IN = 50 µA
+
+RN = 35.9 kΩ
+
+d) IN = 68.8 mA
+
+RN = 1.3 kΩ
+
+25. Con el teorema de Norton, determine el voltaje entre los extremos de R5 en la figura 8-78.
+
+![image](https://user-images.githubusercontent.com/116816731/208305105-c87066c3-b9a8-4bcb-af77-baeac8650b90.png)
+
+Respuesta
+
+17.9 V
+
+27.Determine el circuito equivalente Norton para el puente que aparece en la figura 8-81 sin RL.
+
+![image](https://user-images.githubusercontent.com/116816731/208305133-3e32360c-361f-4c28-aa58-08b5e5e1b436.png)
+
+IN= VTH / RTH = 1.12 V / 1175 Ω
+
+IN = 953 µA
+
+RN = RTH = 1175 Ω
+
+29.Aplique el teorema de Norton al circuito de la figura 8-84.
+
+![image](https://user-images.githubusercontent.com/116816731/208305168-85f68724-f85d-457f-a477-616bc168a845.png)
+
+Respuesta
+
+IN = -48.2 mA
+
+RN = 56.9 Ω
+
+SECCIÓN 8–7 Teorema de transferencia de potencia máxima
+
+31.En el circuito de la figura 8-86, determine el valor de RL para transferencia de potencia máxima.
+
+![image](https://user-images.githubusercontent.com/116816731/208305189-9288d4b5-84f5-411f-b571-d248fd0a4f4f.png)
+
+Rs= 8.2 Ω + 2.94 Ω = 11.1 Ω
+
+Para la transferencia máxima se tiene que:
+
+RL = Rs = 11.1 Ω
+
+33.¿Cuáles son los valores de R4 y RTH cuando la potencia máxima se transfiere de la fuente thevenizada a la red en configuración de escalera de la figura 8-87?
+
+![image](https://user-images.githubusercontent.com/116816731/208305213-ca9856fb-6cf7-49c3-88d4-7c529ade16b9.png)
+
+Respuesta
+
+RTH = 48 Ω
+
+R4 = 160 Ω
+
+SECCIÓN 8–8 Conversiones delta a Y (∆ a Y) y Y a ∆
+
+35.En la figura 8-89, convierta cada red Y en una red delta.
+
+![image](https://user-images.githubusercontent.com/116816731/208305242-2cb3b221-a791-4461-8f45-481f42eade80.png)
+
+a)
+
+En a
+
+RA = R1R2+RIR3+R2R3/R2 = (12) (22) + (12) (18) + (22) (18) / (22) = 876/22 = 39.81Ω
+
+RB = R1R2+R1R3+R2R3/R1 = (12) (22) + (12) (18) + (22) (178) / (12) = 876/12 = 73Ω
+
+RC = R1R2+R1R3+R2R3/R3 = (12) (22) + (12) (18) + (22) (18) / (18) = 876/18 = 48.67Ω
+
+b)
+
+RA = R1R2+R1R3+R2R3/R2 = (6.8) (3.3) + (6.8) (4.7) + (3.3) (4.7) / (3.3) = 69.61/3.3 = 21.18Ω
+
+RB= R1R2+R1R3+R2R3/R1 = (6.8) (3.3) + (6.8) (4.7) + (3.3) (4.7) / (6.8) = 69.61/6.8= 10.28Ω
+
+RC = R1R2+R1R3+R2R3/R3 = (6.8) (3.3) + (6.8) (4.7) + (3.3) (4.7) / (4.7) = 69.61/4.7 = 14.87Ω
+
+4. VIDEO
+
+https://www.youtube.com/watch?v=VF_qr9VUwTn
+
+5. CONCLUSIONES
+
+• Un circuito en serie-paralelo consiste en combinaciones de trayectorias para corriente dispuestas tanto en serie como en paralelo. De igual manera es de suma importante ser capaz de identificar la forma en que están organizados los componentes en un circuito en función de sus relaciones en serie y en paralelo.
+
+• Cuando tenemos combinaciones tanto en serie como en paralelo dentro del mismo circuito y se aplica los métodos de análisis de circuitos en serie y circuitos en paralelo, el divisor de voltaje sometidos a carga es importante, ya que este tipo de circuito se encuentra en muchas situaciones prácticas. Se utiliza los teoremas y las conversiones para facilitar el análisis de ciertos tipos de circuitos, junto con a la ley de Ohm y las leyes de Kirchhoff. Los teoremas de Thévenin y de Norton ponen a nuestro alcance métodos fáciles para reducir un circuito a una forma equivalente simple.
+
+• Se sabe que los voltímetros deben conectarse en paralelo con un resistor para medir el voltaje entre los extremos del resistor. Debido a su resistencia interna, un voltímetro aplica carga al circuito el cual afecta en cierto grado el voltaje que se esté midiendo.
+
+• El puente de Wheatstone permite saber el valor de una resistencia con mayor exactitud y cuando se presenta el caso desequilibrado puede medir varios tipos de magnitud física.
+
+• Las conversiones de una fuente de voltaje con una fuente de corriente se aplica la ley de Ohm pero en este caso la resistencia de la formula hace referencia a la resistencia interna de la fuente de voltaje.
+
+• En la resolución de los ejercicios pares del libro “Principios de circuitos eléctricos” de Floyd, se aplicó lo comprendido de los capítulos 7 y 8, donde comprobamos lo importante que es los métodos de análisis de la combinación de los resistores en serie y en paralelo dentro de circuitos en serie-paralelo; y los teoremas de Thévenin y de Norton que vuelven más fácil su resolución.
+
+6. Bibliografía
+
+Floyd, T. (2007). Principios de circuitos electricos . PEARSON Educación. https://drive.google.com/file/d/1cGAWCJ4-yhAe1LyAXvmOeUhEmQVLy-zv/view
+
+RUBRICA
+
+![image](https://user-images.githubusercontent.com/116816731/208305313-9205ae6a-8984-4b65-bea7-c6ab9e21bbb0.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
