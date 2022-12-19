@@ -17,6 +17,17 @@ Nombre: Donovan Jhosue Salazar Lopez
 # 2. MARCO TEÓRICO (RESUMEN)
 
 ### • CAPITULO 7: CIRCUITOS EN SERIE-PARALELO
+![image](https://user-images.githubusercontent.com/116816731/208339131-3500a576-aaaa-4def-8c8e-14329aafdab1.png)
+
+![image](https://user-images.githubusercontent.com/116816731/208338792-702fe3a0-bb5c-49b1-8caa-60ced798594b.png)
+
+ CAPITULO 8: TEOREMAS DE CIRCUITOS Y CONVERSIONES
+
+![image](https://user-images.githubusercontent.com/116816731/208338890-1c113dae-40ec-4452-b736-672bec29fc9b.png)
+
+![image](https://user-images.githubusercontent.com/116816731/208338960-68edac26-96e3-4621-9410-4a8902308e01.png)
+
+![image](https://user-images.githubusercontent.com/116816731/208338983-4d82d02c-3f4b-4ce0-a7f9-862078e0e4e5.png)
 
 
 3. EXPLICACIÓN Y RESOLUCIÓN DE EJERCICIOS O PROBLEMAS
@@ -559,13 +570,7 @@ https://www.youtube.com/watch?v=VF_qr9VUwTn
 
 • Cuando tenemos combinaciones tanto en serie como en paralelo dentro del mismo circuito y se aplica los métodos de análisis de circuitos en serie y circuitos en paralelo, el divisor de voltaje sometidos a carga es importante, ya que este tipo de circuito se encuentra en muchas situaciones prácticas. Se utiliza los teoremas y las conversiones para facilitar el análisis de ciertos tipos de circuitos, junto con a la ley de Ohm y las leyes de Kirchhoff. Los teoremas de Thévenin y de Norton ponen a nuestro alcance métodos fáciles para reducir un circuito a una forma equivalente simple.
 
-• Se sabe que los voltímetros deben conectarse en paralelo con un resistor para medir el voltaje entre los extremos del resistor. Debido a su resistencia interna, un voltímetro aplica carga al circuito el cual afecta en cierto grado el voltaje que se esté midiendo.
-
 • El puente de Wheatstone permite saber el valor de una resistencia con mayor exactitud y cuando se presenta el caso desequilibrado puede medir varios tipos de magnitud física.
-
-• Las conversiones de una fuente de voltaje con una fuente de corriente se aplica la ley de Ohm pero en este caso la resistencia de la formula hace referencia a la resistencia interna de la fuente de voltaje.
-
-• En la resolución de los ejercicios pares del libro “Principios de circuitos eléctricos” de Floyd, se aplicó lo comprendido de los capítulos 7 y 8, donde comprobamos lo importante que es los métodos de análisis de la combinación de los resistores en serie y en paralelo dentro de circuitos en serie-paralelo; y los teoremas de Thévenin y de Norton que vuelven más fácil su resolución.
 
 6. Bibliografía
 
